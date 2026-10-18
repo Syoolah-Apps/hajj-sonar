@@ -4,6 +4,13 @@ All notable changes to Hajj Sonar are documented here. This release is the
 "Sonar total rebuilt" — the app's screens, words, safety copy, and flows were
 rebuilt as one coherent pass.
 
+## v0.1-alpha.15.6 — 2026-10-18
+
+### Light by default
+- Default theme is now light (sand/teal/gold). Earlier builds persisted dark
+  mode, so this build resets existing installs to light once; your explicit
+  toggle is respected afterward.
+
 ## v0.1-alpha.15.5 — 2026-10-18
 
 ### Dark mode matches the light scheme

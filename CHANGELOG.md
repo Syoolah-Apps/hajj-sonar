@@ -4,6 +4,40 @@ All notable changes to Hajj Sonar are documented here. This release is the
 "Sonar total rebuilt" — the app's screens, words, safety copy, and flows were
 rebuilt as one coherent pass.
 
+## v0.1-alpha.15.5 — 2026-10-18
+
+### Dark mode matches the light scheme
+- Dark theme is now a true dark-tone of the same sand/teal/gold palette as
+  light mode (deep-teal base, gold accent), instead of a generic gray theme.
+- Call screen, encrypted bubbles, and disabled states aligned to the new dark
+  tokens; all text pairs verified against WCAG AA contrast.
+
+### RTL and language
+- Back/chevron arrows flip correctly in Arabic (RTL).
+- In-app language toggle (English/Arabic) added above Appearance in Settings.
+- Technical values (keys, sats, fingerprints) always render left-to-right.
+
+### Payments and wallet
+- Send flow shows a review screen before any money moves; no optimistic
+  success state; legacy-wallet path keeps pending checks before spending.
+- Scan sheet classifies destination QRs and shows a review sheet; unsupported
+  codes show a clear unsupported state.
+- Wallet activity shows signed amounts, pending states that never guess, and
+  mint status.
+
+### Security and privacy
+- Reconnect failures no longer leak raw error messages into public toasts.
+- Relay benchmark reflects the current run only (no stale success carryover).
+- No contact upload, no analytics, no third-party SDKs in the message path.
+
+### Release engineering
+- First-launch crash fixed (splash theme parent).
+- Breez release gate removed so release builds ship without a Breez key;
+  Lightning wallet renders Unavailable until you add your own key
+  (breez.apiKey in local.properties, never committed).
+- Signed with a local debug signature (not a store key) — install via
+  "Install unknown apps".
+
 ## v0.1-alpha.15.4 — 2026-10-18
 
 ### A new look, everywhere

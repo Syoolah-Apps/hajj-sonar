@@ -4,6 +4,12 @@ All notable changes to Hajj Sonar are documented here. This release is the
 "Sonar total rebuilt" — the app's screens, words, safety copy, and flows were
 rebuilt as one coherent pass.
 
+## v0.1-alpha.15.7 — 2026-10-18
+
+### Gold accent in light mode
+- Light mode now uses gold as the primary action color (buttons, focus rings,
+  radar), matching dark mode. Chat bubbles keep the signature deep teal.
+
 ## v0.1-alpha.15.6 — 2026-10-18
 
 ### Light by default

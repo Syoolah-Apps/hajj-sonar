@@ -1,7 +1,7 @@
 # Changelog
 
 All notable changes to Hajj Sonar are documented here. This release is the
-"Sonar total redesign" — the app's screens, words, safety copy, and flows were
+"Sonar total rebuilt" — the app's screens, words, safety copy, and flows were
 rebuilt as one coherent pass.
 
 ## v0.1-alpha.15.4 — 2026-10-18

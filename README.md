@@ -2,13 +2,13 @@
 
 **Private, end-to-end-encrypted messaging built for Hajj and Ummah.** No accounts, no phone numbers — your identity is a cryptographic key that never leaves your phone. Talk, coordinate, and pay without handing your data to anyone.
 
-This is your direct-to-phone build (v0.1-alpha.15.4, arm64-v8a / armeabi-v7a). Arabic-first on fresh installs; English and Arabic fully supported.
+This is your direct-to-phone build (v0.1-alpha.15.5, arm64-v8a / armeabi-v7a). Arabic-first on fresh installs; English and Arabic fully supported.
 
 ## Download
 
-⬇️ **[Download the latest APK (v0.1-alpha.15.4)](https://github.com/Syoolah-Apps/hajj-sonar/releases/latest)**
+⬇️ **[Download the latest APK (v0.1-alpha.15.5)](https://github.com/Syoolah-Apps/hajj-sonar/releases/latest)**
 
-[Direct download — hajj-sonar-v0.1-alpha.15.4-release.apk](https://github.com/Syoolah-Apps/hajj-sonar/releases/download/v0.1-alpha.15.4/hajj-sonar-v0.1-alpha.15.4-release.apk) — sideload: enable "Install unknown apps" for your browser/file manager, open the APK, install. No Google account required.
+[Direct download — hajj-sonar-v0.1-alpha.15.5-release.apk](https://github.com/Syoolah-Apps/hajj-sonar/releases/download/v0.1-alpha.15.5/hajj-sonar-v0.1-alpha.15.5-release.apk) — sideload: enable "Install unknown apps" for your browser/file manager, open the APK, install. No Google account required.
 
 > The release APK is signed with a local build signature, not a store key. After installing, verify the SHA-256 from the release notes matches what you received.
 

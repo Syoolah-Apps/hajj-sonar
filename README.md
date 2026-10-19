@@ -2,13 +2,13 @@
 
 **Private, end-to-end-encrypted messaging built for Hajj and Ummah.** No accounts, no phone numbers — your identity is a cryptographic key that never leaves your phone. Talk, coordinate, and pay without handing your data to anyone.
 
-This is your direct-to-phone build (v0.1-alpha.15.8, arm64-v8a / armeabi-v7a). Arabic-first on fresh installs; English and Arabic fully supported.
+This is your direct-to-phone build (v0.1-alpha.15.9, arm64-v8a / armeabi-v7a). Arabic-first on fresh installs; English and Arabic fully supported.
 
 ## Download
 
-⬇️ **[Download the latest APK (v0.1-alpha.15.8)](https://github.com/Syoolah-Apps/hajj-sonar/releases/latest)**
+⬇️ **[Download the latest APK (v0.1-alpha.15.9)](https://github.com/Syoolah-Apps/hajj-sonar/releases/latest)**
 
-[Direct download — hajj-sonar-v0.1-alpha.15.8-release.apk](https://github.com/Syoolah-Apps/hajj-sonar/releases/download/v0.1-alpha.15.8/hajj-sonar-v0.1-alpha.15.8-release.apk) — sideload: enable "Install unknown apps" for your browser/file manager, open the APK, install. No Google account required.
+[Direct download — hajj-sonar-v0.1-alpha.15.9-release.apk](https://github.com/Syoolah-Apps/hajj-sonar/releases/download/v0.1-alpha.15.9/hajj-sonar-v0.1-alpha.15.9-release.apk) — sideload: enable "Install unknown apps" for your browser/file manager, open the APK, install. No Google account required.
 
 > The release APK is signed with a local build signature, not a store key. After installing, verify the SHA-256 from the release notes matches what you received.
 
@@ -38,6 +38,7 @@ This is your direct-to-phone build (v0.1-alpha.15.8, arm64-v8a / armeabi-v7a). A
 - Send and receive Lightning payments (sats) — scan destination QR, review before confirming; no money moves without your explicit confirm tap
 - Wallet activity with signed amounts, pending states that never guess, mint status
 - Runs on the Breez SDK (Liquid) — bring your own Breez API key to activate the wallet
+- In this release the wallet and payment entry points are hidden in the app. Balances, settlement, and receipts keep working in the background and nothing is deleted; the hiding is a single switch and will be turned back off.
 
 **Reliability and privacy**
 - Encrypted auto-backup on mobile/Wi-Fi rules you set; restore flow with honest scope copy and no destructive surprises
@@ -49,7 +50,7 @@ This is your direct-to-phone build (v0.1-alpha.15.8, arm64-v8a / armeabi-v7a). A
 
 - Kotlin Multiplatform + Compose (Android phone app), Rust core (`sonar-core`) via UniFFI
 - Nostr-style key identity, BLE mesh + internet relay routing, SQLite local store
-- Full test suite: 846+ Android unit tests, catalog-driven i18n (352 translation keys, EN/AR)
+- Full test suite: 920 Android unit tests, catalog-driven i18n (1,357 translation keys, EN/AR at full parity)
 
 ## Status
 

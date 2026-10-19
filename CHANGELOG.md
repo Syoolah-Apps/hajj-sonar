@@ -4,6 +4,29 @@ All notable changes to Hajj Sonar are documented here. This release is the
 "Sonar total rebuilt" — the app's screens, words, safety copy, and flows were
 rebuilt as one coherent pass.
 
+## v0.1-alpha.15.9 — 2026-10-19
+
+### Localization
+- Every public Android string now comes from the shared translation catalog:
+  405 new EN/AR keys this release, 1,357 keys in total with full EN/AR parity
+  (no English-only string is left in the interface).
+- A fail-closed audit gate (`scripts/i18n/audit_hajj_public_literals.py`)
+  blocks unkeyed public literals from shipping, so regressions are caught in
+  CI rather than on a user's phone.
+- Notification copy is localized in every Android push path (message, wallet,
+  and wake notifications). Payment notifications now substitute their
+  placeholders instead of printing them raw.
+
+### Wallet
+- Wallet and payment entry points are hidden app-wide in this build. Balances,
+  settlement, and receipts keep working in the background, and no balance or
+  history is removed — the hiding is a single policy switch and is reversible.
+
+### Release engineering
+- Signed release APK (arm64-v8a / armeabi-v7a) attached to this release.
+- Android unit suite: 920 tests, 0 failures; Rust core suite: 661 tests, 0
+  failures.
+
 ## v0.1-alpha.15.8 — 2026-10-19
 
 ### Localization

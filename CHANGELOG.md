@@ -4,6 +4,34 @@ All notable changes to Hajj Sonar are documented here. This release is the
 "Sonar total rebuilt" — the app's screens, words, safety copy, and flows were
 rebuilt as one coherent pass.
 
+## v0.1-alpha.15.8 — 2026-10-19
+
+### Localization
+- ContactProfile, GroupInfo, and Settings screens no longer ship raw English
+  strings; 31 new EN/AR catalog keys added (profile actions/privacy/timezone,
+  group invite/join/privacy, language selector).
+
+### Dark mode and theming
+- Gold accent throughout dark mode; RTL-correct back/chevron arrows in Arabic.
+- In-app language toggle (English/Arabic) above Appearance in Settings.
+
+### Payments and wallet
+- Send flow shows a review screen before any money moves; no optimistic
+  success state; legacy-wallet path keeps pending checks before spending.
+- Scan sheet classifies destination QRs; unsupported codes show a clear state.
+- Wallet activity shows signed amounts, pending states, and mint status.
+
+### Security and privacy
+- Reconnect failures no longer leak raw error messages into public toasts.
+- Relay benchmark reflects the current run only.
+- No contact upload, no analytics, no third-party SDKs in the message path.
+
+### Release engineering
+- First-launch crash fixed (splash theme parent).
+- Breez release gate removed; Lightning wallet renders Unavailable until
+  you add your own key (breez.apiKey in local.properties, never committed).
+- Signed with a local debug signature — install via "Install unknown apps".
+
 ## v0.1-alpha.15.7 — 2026-10-18
 
 ### Gold accent in light mode
